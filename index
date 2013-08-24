@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Responsive text</title>
+<meta name="viewport" content="width=device-width" />
+<style type="text/css">
+
+body {
+	margin: 0;
+	padding: 0;
+	background: url(img/background-pattern.jpg) repeat top left;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 0.9em
+	}
+#logo {
+	width: 100%;
+	text-align: center;
+	margin-bottom: -25px; 
+	}
+	
+#logo img {
+	max-width: 100%;
+	}
+#gallery-wrapper {
+	width: 100%;
+	padding: 6px 0;
+	background: rgba(162,171,157,.6);
+	overflow:hidden;	
+	}
+#top1, #top2, #top3, #top4 {
+	height: 350px;
+	float: left;
+	width: 25%;
+	}
+#top1 {
+	background:url(zrodla/img/top1.jpg) no-repeat top center;}
+#top2 {
+	background:url(zrodla/img/top2.jpg) no-repeat top center;}
+#top3 {
+	background:url(zrodla/img/top3.jpg) no-repeat top center;}
+#top4 {
+	background:url(zrodla/img/top4.jpg) no-repeat top center;}
+div.desc {
+	height: 140px;
+	text-align: center;
+	padding: 5px 15px;
+	background: rgba(51,51,51,.7);
+	font-size: 1.2em;
+	color: #fff;
+	margin-top: 320px;
+	-webkit-transition: all .3s ease-out 0s;
+	-moz-transition: all .3s ease-out 0s;
+	-ms-transition: all .3s ease-out 0s;
+	-o-transition: all .3s ease-out 0s;
+	transition: all .3s ease-out 0s;
+	cursor:pointer;
+	}
+div.desc:hover {
+	margin-top: 210px;
+	}
+#content-wrapper {
+	width: 960px;
+	margin: 30px auto;
+	}
+#left {
+	padding: 15px;
+	float: left;
+	width: 630px;
+	font-size: 1.2em;
+	line-height: 1.6em;
+	color: #fff;
+	background: rgba(109,144,82,.8)
+	}
+#right {
+	text-align: center;
+	padding: 15px;
+	float: right;
+	width: 240px;
+	background: rgba(160,175,156,.8);
+	font-size: 1.2em;
+	line-height: 1.5em;
+	color: #fff;
+	}
+	
+.fluid-image {
+	margin-right: 20px;
+	float: left;}
+.extra, .logo-tablet, .logo-phone {
+	display: none;
+	}
+@media all and (min-width: 481px) and (max-width: 959px) {
+	#right, .logo-desktop, .logo-phone, #top3 {
+		display: none;
+		}
+	#content-wrapper {
+		width: 100%;
+		}
+	#left {
+		width: 86%;
+		margin: 0 5%;
+		padding: 2%; 
+		}	
+	.extra, .logo-tablet {
+		display: inline-block
+		}	
+	.fluid-image {
+		margin: 1%;
+		width: 31.3333333333%;
+		}	
+	#top1, #top2, #top4 {
+		width: 33.33333333% 
+		}	
+	h1 img {
+		max-width:100%
+		}
+}	
+	
+@media all and (max-width: 481px) {
+	body {
+		background:url(img/background-pattern.jpg)
+		}
+	#gallery-wrapper div {
+		background: none;
+		width: 100%;
+		height: auto;
+		}
+	#gallery-wrapper div div.desc {
+		background: rgba(0,0,0,.5);
+		transform: none;
+		margin-top: 1%;
+		padding: 3% 0 0 0;
+		font-size: 1.4em;
+		}
+	.details, .logo-tablet, .logo-desktop {
+		display:none
+		}	
+	.logo-phone	{
+		display: inline-block;
+		margin: 1%;
+		}
+		
+	#content-wrapper {
+		width: 100%;
+		}
+	#left {
+		width: 96%;
+		padding: 2%;
+		}
+	h1 img {
+		max-width:100%
+		}
+	.fluid-image {
+		width:100%;
+		text-align:center;
+		margin-bottom: 2%;
+		}
+	#right {
+		width: auto;
+		
+		}
+	
+	}	
+</style>
+    
+</head>
+
+<body>
+
+<div id="logo">
+	<img class="logo-desktop" src="zrodla/img/logo-desktop.png" alt="" />
+    <img class="logo-tablet" src="zrodla/img/logo-tablet.png" alt="" />
+    <img class="logo-phone" src="zrodla/img/logo-phone.png" alt="" />
+</div>
+
+<div id="gallery-wrapper">
+	<div id="top1">
+    	<div class="desc">O hodowli<br/><br/><span class="details"> hngnhgsjns jo r hr dvmfgjd djjd maa  jsdfaas </span></div>
+    </div>
+   	<div id="top2">
+    	<div class="desc">Psy<br/><br/> <span class="details">hngnhgsjn rhhth rthrt sjodvmfgjd djjd maa  jsdfaas </span></div>
+    </div>
+    <div id="top3">
+    	<div class="desc">Suki<br/><br/> <span class="details">hngnhgsjnsj rt  rtthrht odvmfgjd djjd maa  jsdfaas </span></div>
+    </div>
+    <div id="top4">
+    	<div class="desc">Szczenięta<br/><br/><span class="details"> hngnhgsjns rttht rt  jodvmfgjd djjd maa  jsdfaas </span></div>
+    </div>
+</div>
+
+<div id="content-wrapper">
+  <section id="left">
+  
+   	<h1><img src="zrodla/img/h1.png" alt="" /></h1>
+    <p>Sizzle ullamcorper. Aliquam sagittis massa owned maurizzle. Vestibulizzle ante boofron primis break it down faucibizzle phat luctizzle et ultricizzle go to hizzle cubilia Curae; Aenizzle shiz. Pellentesque bling bling morbi tristique boofron izzle netizzle go to hizzle sheezy famizzle izzle ma nizzle egestizzle. Cool tempor yo mamma velit. Crazy pimpin' fo. Ma nizzle tortor enim, scelerisque ac, dignissim a, yo the bizzle, arcu. Things gizzle. Donizzle fermentum, we gonna chung at pharetra we gonna chung, yo mamma shizznit stuff own yo', nizzle nizzle urna own yo' quizzle nibh. Sheezy tellus neque, shizzle my nizzle crocodizzle its fo rizzle, ornare stuff, vulputate yo mamma, leo. 
+     Maurizzle dope urna, mofo izzle, pot venenatizzle, sodalizzle pimpin', sure. Etizzle gravida.</p>
+    <p>Crazy crunk urna, pimpin' dope, tristique funky fresh, its fo rizzle the bizzle, hizzle. Donec pharetra, nisi you son of a bizzle facilisizzle malesuada, fizzle yippiyo that's the shizzle velizzle, break yo neck, yall check out this libero erat izzle daahng dawg. </p>
+<div class="fluid-image"><img src="zrodla/img/zdj1.jpg" width="100%" alt="" />
+</div>
+<div class="fluid-image"><img src="zrodla/img/zdj2.jpg" width="100%" alt="" />
+</div>
+<div class="fluid-image extra"><img src="zrodla/img/zdj2.jpg" width="100%" alt="" /></div>
+    
+    </section>
+
+	<section id="right">
+    
+    <img src="zrodla/img/h2.png" width="202" height="113" alt="" />
+    <p>Crazy crunk urna, pimpin' dope, tristique funky fresh, its fo rizzmauris own yo', scelerisque egizzle, iaculizzle vizzle, bizzle izzle, away. Stuff owned.</p>
+    <img src="zrodla/img/zdj3.jpg" width="169" height="231" alt="" />
+    <img src="zrodla/img/h3.png" width="229" height="105" alt="" />
+    <p>Crazy crunk urna, pimpin' dope, tristique aptent taciti pimpin' ad litora torquent per forward.</p>
+    </section>
+</div>
+</body>
+</html>
